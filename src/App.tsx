@@ -9,9 +9,7 @@ function App() {
   function getDataFromServer() {
     axios
       .get(urlWithProxy)
-      .then((res) =>{ 
-        console.log(res)
-        return setData(res.data)})
+      .then((res) => setData(res.data))
       .catch((err) => {
         console.error(err);
       });
