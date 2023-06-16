@@ -1,10 +1,22 @@
 {
-  "dependencies": {
-    "concurrently": "^7.0.0"
-  },
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"cd ./server && npm run server\" \"cd ./client && npm run dev\"",
-    "build": "cd ./client && vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"cd ./server && npm run server\" \"npm run dev\""
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.8.0",
+    "concurrently": "^7.0.0"
   }
 }

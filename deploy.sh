@@ -4,7 +4,6 @@
 
 # abort on errors
 set -e
-cd client
 
 # build
 npm run build
